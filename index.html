@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta http-equiv="X-UA-Compitable"content="ie-edge">
+    <link rel= "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css\style.css">
+    <title>JavaScript Coding</title>
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge1: Your Age in days</h2>
+        <div class="flex-box-container-1">
+            <div >
+                <button class="btn btn-primary" onclick="ageInDays()" > Clickme </button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()"> Reset </button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+
+        </div>
+    </div>
+    <div class="container-2">
+        <h2>Challenge2: Cat Generator</h2>
+        <button class="btn btn-success" id="cat-generator" onclick="generateCat()">  Generate Cat </button>
+   
+    <div class="flex-box-container-2" id = "flex-cat-gen">
+        
+    </div>
+    </div>
+    <div class="container-3">
+        <h2>Challenge3: Rock, Paper, Scissor</h2>
+
+       <div class="flex-box-rps" id="flex-box-rps-div">
+          <img id="rock" src="https://jooinn.com/images/rock-18.jpg" alt="rock" height="200" width="200" onclick="rpsGame(this)">
+          <img id="paper" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT6P31gjJ72PZ-b5Q_H2w9IobC90P_4cfe4DKEfgy0ouwWHGT1_&usqp=CAU"alt="paper" height="200" width="200" onclick="rpsGame(this)">
+          <img id="scissors" src="https://www.cchobby.com/media/catalog/product/cache/14/image/9df78eab33525d08d6e5fb8d27136e95/1/1/11196_1.jpg" alt="scissors" height="200" width="200" onclick="rpsGame(this)">
+
+        </div>    
+    </div>
+
+
+    <div class="container-4">
+        <h2 id="change my color">Challeng4: Changing the colors of the Buttons</h2>
+        <div class="flex-box-pick-color" id = "flex-box-colbutton">
+          <form action="">
+               <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                 <option value="random">Random</option>
+                 <option value="red">Red</option>
+                 <option value="reset">Reset</option>
+                 <option value="green">Green</option>
+               </select>
+          </form>
+         
+          <button class="btn btn-primary">Wee!</button>
+          <button class="btn btn-danger">Yahoo!</button>
+          <button class="btn btn-warning">Google!</button>
+          <button class="btn btn-success">Facebook!</button>
+
+
+
+      </div>
+
+
+    </div>
+    <div class="container-5">
+        <h1>Challenge5: Blackjack App</h1>
+        <h3><span id="blackjack-result">play the game</span></h3>
+
+        <div class="flex-blackjack-row-1">
+            <div id= "your-box">
+                <h2>you: <span id="your-blackjack-result">0</span></h2>
+            </div>
+
+            <div id= "dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+                <button class="btn-lg btn-danger mr-2" id="blackjack-deal-button">Deal</button>
+            </div>
+
+        </div> 
+        
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                
+                   
+                </tr>
+            </table>
+
+        </div>
+    
+    </div>
+
+    </div>
+
+    <div class='container-6'>
+        <h2>Challenge 6: AJAX API's - Random User Generator</h2>
+        <div class="flex-ajax-row-1">
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
